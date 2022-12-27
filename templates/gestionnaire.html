@@ -1,0 +1,39 @@
+{% extends 'base.html' %}{% block title %}PRENEZ RENDEZ-VOUS {% endblock %} {% block extra_css %} {% endblock %}{% load static %} {% block content %}
+<section class="cases-section">
+    <div class="auto-container">
+        <!--Heading-->
+        <div class="sec-title centered">
+            <h1>Nos gestionnaires</h1>
+            <div class="text"> Ces sont des personnes qui possèdent des connaissances spécialisées dans un domaine particulier. En général, ces dernières marquent l'aboutissement de nombreuses années de formation et d'expérience professionnelle dans leur domaine fétiche.</div>
+        </div>
+    </div>
+
+    <div class="carousel-outer">
+        <div class="cases-carousel owl-theme owl-carousel">
+            <!--Case Block-->
+            {% for gestionnaire in gestionnaires %}
+
+            <div class="default-case-block">
+                <div class="inner-box">
+                    <figure class="image-box">
+                        <a href="{% url 'detail_gestionnaire' gestionnaire.id %}"><img src="{{gestionnaire.photo.url}}" style="height:300px" alt=""></a>
+                    </figure>
+                    <div class="overlay-box">
+                        <div class="overlay-inner">
+                            <div class="overlay-content">
+                                <h3><a href="{% url 'detail_gestionnaire' gestionnaire.id %}">{{gestionnaire.nom}} {{gestionnaire.prenom}}</a></h3>
+
+                                <div class="link-box"><a href="{% url 'detail_gestionnaire' gestionnaire.id %}">Contactez Moi<span class="fa fa-long-arrow-right"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}{% block title %}PRENEZ UN RENDEZ-VOUS {% endblock %} {% block extra_css %} {% endblock %}{% load static %} {% block content %}
+<section class="news-section">
+    <div class="auto-container">
+        <!--Heading-->
+        <div class="sec-title centered">
+            <h1>Nos Agences</h1>
+            <div class="text">Ces agences bancaires sont des endroits ouvert aux publics permettant aux clients de procéder à des opérations bancaires telque crédits, épargne ou paiements mais aussi se trouve les gestionnaire de la banque.</div>
+        </div>
+
+        <div class="row clearfix">
+            <!--News Block-->
+            {% for agence in agences %}
+            <div class="news-block-one col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <figure class="image-box">
+                        <a href="{% url 'detail_agence' agence.id %}"><img src="{{agence.photo.url}}" style="height:250px" alt=""></a>
+                    </figure>
+                    <h3><a href="{% url 'detail_agence' agence.id %}">{{agence.nom}}</a></h3>
+                    <div class="link-box">
+                        <a href="{% url 'detail_agence' agence.id %}">Plus de Details</a></div>
+
+                </div>
+            </div>
+            {% endfor %}
+</section>
+
+{% endblock %}

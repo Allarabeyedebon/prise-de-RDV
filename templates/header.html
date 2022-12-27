@@ -1,0 +1,204 @@
+<header class="main-header header-style-one">
+
+    <!--Header-Upper-->
+    <div class="header-upper">
+        <div class="auto-container">
+            <div class="clearfix">
+
+                <div class="logo-box">
+                    <div class="logo-box">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="" title=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upper-right">
+                    <div class="clearfix">
+                        <!--Info Box-->
+                        <div class="upper-column info-box">
+                            <div class="icon-box"><span class="flaticon-phone-book"></span></div>
+                            <ul>
+                                <li>+23569213369 <br>bonheur@domain.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="upper-column info-box">
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--End Header Upper-->
+
+    <!--Header Lower-->
+    <div class="header-lower">
+
+        <div class="auto-container">
+            <div class="nav-outer clearfix">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current"><a href="/">Accueil</a>
+
+                            </li>
+                            <li class="dropdown"><a href="{% url 'agence' %}">Agences</a>
+                                <ul>
+                                    <li><a href="{% url 'agence' %}">Toutes les agences</a></li>
+
+                                </ul>
+                            </li>
+                            <!-- <li class="dropdown"><a href="#">Services</a>
+                                <ul>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Financial Planning</a></li>
+                                    <li><a href="#">Savings &amp; Investment</a></li>
+                                    <li><a href="#">Private Banking</a></li>
+                                    <li><a href="#">Consumer Leasing</a></li>
+                                    <li><a href="#">Strategic Planning</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="dropdown"><a href="{% url 'gestionnaire' %}">Gestionnaires</a>
+                                <ul>
+                                    <li><a href="{% url 'gestionnaire' %}">Toutes les gestionnaires</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Compte</a>
+                                <ul>
+                                    <li><a href="#">Courant</a></li>
+                                    <li><a href="#">Epargne</a></li>
+                                    <li><a href="#">Autres</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+
+                                <li><a href="#">Contact</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+
+                <div class="options-box clearfix">
+
+                    <!--Search Box-->
+                    <div class="search-box">
+                        <div class="dropdown">
+                            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                            <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu1">
+                                <li class="panel-outer">
+                                    <div class="form-container">
+                                        <form method="post" action="http://html.efforttech.com/html/fico/blog.html">
+                                            <div class="form-group">
+                                                <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Language Box-->
+                    <div class="lang-box">
+                        <div class="dropdown">
+                            <button class="lang-btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eng  <span class="fa fa-angle-down"></span></button>
+                            <ul class="dropdown-menu search-panel" aria-labelledby="dropdownMenu2">
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Arabe</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Header Lower-->
+
+    <!--Sticky Header-->
+    <div class="sticky-header">
+        <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+                <a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+            </div>
+
+            <!--Right Col-->
+            <div class="right-col pull-right">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">
+                        <!-- Toggle Button -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li class="current"><a href="/">Accueil</a>
+
+                            </li>
+                            <li class="dropdown"><a href="{% url 'agence' %}">Agences</a>
+                                <ul>
+                                    <li><a href="{% url 'agence' %}">Toutes les agences</a></li>
+
+                                </ul>
+                            </li>
+                            <!-- <li class="dropdown"><a href="#">Services</a>
+                                <ul>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Financial Planning</a></li>
+                                    <li><a href="#">Savings &amp; Investment</a></li>
+                                    <li><a href="#">Private Banking</a></li>
+                                    <li><a href="#">Consumer Leasing</a></li>
+                                    <li><a href="#">Strategic Planning</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="dropdown"><a href="{% url 'gestionnaire' %}">Gestionnaires</a>
+                                <ul>
+                                    <li><a href="{% url 'gestionnaire' %}">Toutes les gestionnaires</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Compte</a>
+                                <ul>
+                                    <li><a href="#">Courant</a></li>
+                                    <li><a href="#">Epargne</a></li>
+                                    <li><a href="#">Autres</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+            </div>
+
+        </div>
+    </div>
+    <!--End Sticky Header-->
+
+</header>

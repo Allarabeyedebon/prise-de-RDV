@@ -1,0 +1,74 @@
+{% extends 'base.html' %}{% block title %}PRENEZ RENDEZ-VOUS {% endblock %} {% block extra_css %} {% endblock %}{% load static %} {% block content %}
+
+<section class="cases-section">
+    <!DOCTYPE html>
+    <html>
+
+    <!-- Mirrored from html.efforttech.com/html/fico/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Oct 2022 14:33:11 GMT -->
+
+    <body>
+
+        <!--Sidebar Page Container-->
+        <div class="sidebar-page-container">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Content Side / Blog Classic-->
+                    <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                        <div class="blog-detail">
+                            <div class="inner-box">
+                                <h2>Notre Agence de la Place</h2>
+                                <ul class="post-info clearfix">
+                                </ul>
+                                <div class="big-image">
+                                    <img src="{{agence.photo.url}}" style="height:400px ; width:400px" alt="" />
+                                </div>
+
+                                <!-- Comment Form -->
+                                <div class="comment-form">
+
+                                    <div class="group-title">
+                                        <h2>Laissez un Commentaire</h2>
+                                    </div>
+
+                                    <!--Comment Form-->
+                                    <form method="post" action="http://html.efforttech.com/html/fico/blog.html">
+                                        <div class="row clearfix">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <textarea class="darma" name="message" placeholder="Type  de Commentaire"></textarea>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><a href="{% url 'account_login' %}">Envoyer </a></button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <!--End Comment Form -->
+
+                            </div>
+                        </div>
+                        <!--End Sidebar Side-->
+
+                    </div>
+                </div>
+            </div>
+            <!--End Sidebar Page Container-->
+
+        </div>
+        <!--End pagewrapper-->
+
+        <!--Scroll to top-->
+
+        <!-- Color Palate / Color Switcher -->
+
+        <!-- /.End Of Color Palate -->
+
+
+
+
+    </body>
+
+    {% endblock %}

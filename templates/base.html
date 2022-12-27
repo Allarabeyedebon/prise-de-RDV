@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from html.efforttech.com/html/fico/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Oct 2022 14:25:55 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Gestion de RDV</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'plugins/revolution/css/settings.css' %}" rel="stylesheet" type="text/css">
+    <!-- REVOLUTION SETTINGS STYLES -->
+    <link href="{% static 'plugins/revolution/css/layers.css' %}" rel="stylesheet" type="text/css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link href="{% static 'plugins/revolution/css/navigation.css' %}" rel="stylesheet" type="text/css">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+    <!--Color Switcher Mockup-->
+    <link href="{% static 'css/color-switcher-design.css' %}" rel="stylesheet">
+
+    <!--Color Themes-->
+    <link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+
+
+        <!-- Main Header-->
+        {% include 'header.html' %}
+        <!--End Main Header -->
+
+        {% block content %} {% endblock %}
+
+
+        <!--Main Footer-->
+        {% include 'footer.html' %}
+
+
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+
+    <div class="various-color clearfix">
+        <div class="colors-list">
+            <span class="palate default-color active" data-theme-file="css/color-themes/default-theme.css"></span>
+            <span class="palate navy-color" data-theme-file="css/color-themes/navy-theme.css"></span>
+            <span class="palate maroon-color" data-theme-file="css/color-themes/maroon-theme.css"></span>
+            <span class="palate black-color" data-theme-file="css/color-themes/black-theme.css"></span>
+        </div>
+    </div>
+
+    <div class="palate-foo">
+        <!-- <span>You can easily change and switch the colors.</span> -->
+    </div>
+
+    </div>
+    <!-- /.End Of Color Palate -->
+
+
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <!--Revolution Slider-->
+    <script src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+    <script src="{% static 'js/main-slider-script.js' %}"></script>
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <!--Color Switcher-->
+    <script src="{% static 'js/color-settings.js' %}"></script>
+</body>
+
+<!-- Mirrored from html.efforttech.com/html/fico/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Oct 2022 14:28:26 GMT -->
+
+</html>

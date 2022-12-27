@@ -1,0 +1,77 @@
+{% extends 'base.html' %}{% block title %}PRENEZ RENDEZ-VOUS {% endblock %} {% block extra_css %} {% endblock %}{% load static %} {% block content %}
+
+<section class="cases-section">
+    <!DOCTYPE html>
+    <html>
+
+    <!-- Mirrored from html.efforttech.com/html/fico/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Oct 2022 14:33:11 GMT -->
+
+    <body>
+
+        <!--Sidebar Page Container-->
+        <div class="sidebar-page-container">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Content Side / Blog Classic-->
+                    <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                        <div class="blog-detail">
+                            <div class="inner-box text-center">
+                                <h2>Je Suis Votre Gestionnaire de Finance</h2>
+                                <ul class="post-info clearfix">
+
+                                </ul>
+                                <div class="big-image">
+                                    <center>
+                                        <img src="{{gestionnaire.photo.url}}" style="height:150px ; width:150px" alt="" />
+                                    </center>
+                                </div>
+
+                                <!-- Comment Form -->
+                                <div class="comment-form">
+
+                                    <div class="group-title">
+                                        <h2>Envoyer un message</h2>
+                                    </div>
+
+                                    <!--Comment Form-->
+                                    <form method="post" action="http://html.efforttech.com/html/fico/blog.html">
+                                        <div class="row clearfix">
+                                            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                                                <input type="text" name="username" placeholder="Enter votre nom" required>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                                                <input type="email" name="email" placeholder="Entrer votre adresse mail" required>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <textarea class="darma" name="message" placeholder="Objet"></textarea>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                                <li><a href="{% url 'account_login' %}"><strong>Envoyer</strong></a></li>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <!--End Comment Form -->
+
+                            </div>
+                        </div>
+                        <!--End Sidebar Side-->
+
+                    </div>
+                </div>
+            </div>
+            <!--End Sidebar Page Container-->
+
+        </div>
+
+
+
+    </body>
+
+    {% endblock %}
